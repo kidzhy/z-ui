@@ -1,0 +1,31 @@
+.zj-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: normal;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  text-align: center;
+  transition: 0.1s;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  &:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+  }
+  &-primary {
+    color: #fff;
+    background-color: @primary;
+    border-color: @primary;
+    &:hover {
+      background-color: lighten(@primary, 10%);
+      border-color: lighten(@primary, 10%);
+      color: #fff;
+    }
+  }
+}
